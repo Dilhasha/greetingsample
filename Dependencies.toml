@@ -293,11 +293,31 @@ dependencies = [
 ]
 
 [[package]]
+org = "ballerinax"
+name = "wso2.controlplane"
+version = "1.1.0"
+dependencies = [
+	{org = "ballerina", name = "file"},
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "jwt"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.runtime"},
+	{org = "ballerina", name = "log"},
+	{org = "ballerina", name = "os"},
+	{org = "ballerina", name = "uuid"}
+]
+modules = [
+	{org = "ballerinax", packageName = "wso2.controlplane", moduleName = "wso2.controlplane"}
+]
+
+[[package]]
 org = "dilhasha"
 name = "greetingsample"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "http"}
+	{org = "ballerina", name = "http"},
+	{org = "ballerinax", name = "wso2.controlplane"}
 ]
 modules = [
 	{org = "dilhasha", packageName = "greetingsample", moduleName = "greetingsample"}

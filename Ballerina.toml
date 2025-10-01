@@ -4,5 +4,4 @@ name = "greetingsample"
 version = "0.1.0"
 title = "GreetingSample"
 
-[build-options]
-sticky = true
+
